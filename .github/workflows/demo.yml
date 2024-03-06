@@ -28,10 +28,10 @@ jobs:
       - name: store asset aritifact into file
         uses: actions/upload-artifact
         with:
-          name: dist
+          name: dist_files
           path: |
-            dist
-            package.json
+            ./dist
+            ./package.json
   deploy:
     needs: build
     runs-on: ubuntu-latest
